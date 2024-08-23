@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.app.mybaseapp.models.user_details.UserDetailsResponse
 import com.app.mybaseapp.repository.app_repository.AppRepository
 import com.app.mybaseapp.utils.NetworkResult
+import com.app.mybaseapp.utils.errorLog
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

@@ -8,6 +8,7 @@ package com.app.mybaseapp.utils
 import android.app.Activity
 import android.util.Log
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModel
 import com.app.mybaseapp.BuildConfig
 
 fun Activity.errorLog(message: String) {
@@ -46,6 +47,27 @@ fun Fragment.infoLog(message: String) {
 }
 
 fun Fragment.warningLog(message: String) {
+    if (BuildConfig.DEBUG)
+        Log.w(this::class.java.simpleName, message)
+}
+
+
+fun ViewModel.errorLog(message: String) {
+    if (BuildConfig.DEBUG)
+        Log.e(this::class.java.simpleName, message)
+}
+
+fun ViewModel.debugLog(message: String) {
+    if (BuildConfig.DEBUG)
+        Log.d(this::class.java.simpleName, message)
+}
+
+fun ViewModel.infoLog(message: String) {
+    if (BuildConfig.DEBUG)
+        Log.i(this::class.java.simpleName, message)
+}
+
+fun ViewModel.warningLog(message: String) {
     if (BuildConfig.DEBUG)
         Log.w(this::class.java.simpleName, message)
 }
