@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:indeterminateTint="@color/black"
+        android:visibility="gone"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/text_user_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginHorizontal="14dp"
+        android:textColor="@color/black"
+        android:text="User Details"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_user"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="User Image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_user_details"
+        android:layout_marginTop="24dp"
+        tools:ignore="HardcodedText" />
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_user"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        >
+
+        <TextView
+            android:id="@+id/text_first_name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="First Name"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/text_first_name_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            tools:text="First Name"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            tools:ignore="HardcodedText"
+            />
+
+
+        <TextView
+            android:id="@+id/text_last_name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="Last Name"
+            tools:ignore="HardcodedText"
+            android:layout_marginTop="14dp"
+            />
+
+        <TextView
+            android:id="@+id/text_last_name_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            tools:text="Last Name"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            tools:ignore="HardcodedText"
+            />
+
+
+        <TextView
+            android:id="@+id/text_last_email_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="Email"
+            tools:ignore="HardcodedText"
+            android:layout_marginTop="14dp"
+            />
+
+        <TextView
+            android:id="@+id/text_last_email_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            tools:text="Email"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            tools:ignore="HardcodedText"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
