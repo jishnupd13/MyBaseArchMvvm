@@ -20,3 +20,4 @@ fun View.invisible(){
 fun Fragment.toast(msg:String){
      Toast.makeText(requireContext(), msg, Toast.LENGTH_SHORT).show()
 }
+
