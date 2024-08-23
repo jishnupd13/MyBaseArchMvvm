@@ -18,7 +18,6 @@ import com.app.mybaseapp.utils.NetworkResult
 import com.app.mybaseapp.utils.USER_ID
 import com.app.mybaseapp.utils.hide
 import com.app.mybaseapp.utils.show
-import com.app.mybaseapp.utils.showAlertDialog
 import com.app.mybaseapp.utils.toast
 import com.bumptech.glide.Glide
 import dagger.hilt.android.AndroidEntryPoint
